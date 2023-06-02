@@ -1,0 +1,76 @@
+:root {
+  --main-font: #232946;
+  --box-shadow: 0 2px 4px rgba(243, 210, 150, 0.5);
+  --sub-font: #4c774e;
+  --link: rgba(241, 60, 32, 0.7);
+}
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background: #fffffe;
+  color: var(--main-font);
+  text-align: center;
+}
+h1 {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+h2 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+h4 {
+  color: var(--sub-font);
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+a:hover {
+  cursor: pointer;
+  color: #4c774e;
+}
+
+.container {
+  max-width: 800px;
+  margin-top: 40px;
+}
+.navigation-links {
+  display: flex;
+  justify-content: center;
+}
+.link {
+  border: 2px solid rgb(243, 210, 150);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  background: #f9f2e4;
+  padding: 10px 20px;
+  margin: 5px 20px;
+}
+.introduction {
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.intro-paragraph {
+  border: 1px solid #f9f2e4;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  background: #f9f2e4;
+  padding: 10px 20px;
+  margin: 20px;
+  color: rgba(35, 41, 70, 0.7);
+}
+.email {
+  margin-bottom: 40px;
+}
+.contact-info {
+  margin: 60px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Printing</title>
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        background: rgba(255, 126, 103, 0.1);
+        width: 50%;
+        margin: 0 auto;
+      }
+      h1 {
+        color: #ff7e67;
+        text-align: center;
+        font-size: 38px;
+        font-weight: bolder;
+        padding-top: 20px;
+        padding-bottom: 0 px;
+        margin-bottom: 0px;
+      }
+      h3 {
+        text-align: center;
+        color: #347474;
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+      img {
+        border-radius: 2px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      p {
+        text-align: justify;
+        font-weight: 300;
+        line-height: 1.5;
+        font-size: 20px;
+        width: 100%;
+      }
+      hr {
+        height: 2px;
+        background: #ff7e67;
+        border: none;
+        margin: 5px auto;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        display: block;
+        text-align: center;
+        font-weight: 300;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+      button {
+        background: #347474;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 26px;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 3px 4px 8px #174b4b;
+        display: block;
+        margin: 10px auto;
+        padding: 20px 30px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #ff7e67;
+        box-shadow: 3px 4px 8px #b7503e;
+      }
+      .wiki {
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .wiki:hover {
+        text-decoration: none;
+        color: #ff7e67;
+      }
+      .article {
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .article:hover {
+        text-decoration: underline;
+        color: #ff7e67;
+      }
+      .newLink {
+        text-align: center;
+      }
+      .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h6 {
+        text-align: center;
+        font-size: small;
+        color: rgb(68, 68, 68);
+        font-weight: 600;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <h1>Screen Printing</h1>
+      <h3><em>"Do It Yourself"</em> approach</h3>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/313/original/Hello_Hand-Print.gif?1680222929"
+        alt="Self screen printing on fabric"
+      />
+      <p>
+        Screen printing is a printing technique where a mesh is used to transfer
+        ink (or dye) onto a substrate, except in areas made impermeable to the
+        ink by a blocking stencil. A blade or squeegee is moved across the
+        screen to fill the open mesh apertures with ink, and a reverse stroke
+        then causes the screen to touch the substrate momentarily along a line
+        of contact. This causes the ink to wet the substrate and be pulled out
+        of the mesh apertures as the screen springs back after the blade has
+        passed. One colour is printed at a time, so several screens can be used
+        to produce a multi-coloured image or design. <div>Continue to read on
+        <a
+          class="article"
+          href="https://en.wikipedia.org/wiki/Screen_printing"
+          target="_blank"
+        >
+          Wikipedia.
+        </a></div>
+      </p>
+
+      <button>More information</button>
+
+      <h6>
+        This page was built by
+        <a
+          class="article"
+          href="https://www.nidesign.org/hello"
+          target="_blank"
+        >
+          Ni Duong</a
+        >
+      </h6>
+      
+
+      
+    </div>
+    <script>
+      function updateHeading(newheading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newheading;
+      }
+      function popUpPrompt() {
+        let name = prompt("What is your name?");
+        let emailAddress = prompt("What is your email address?");
+        let ratingAnswer = prompt(
+          "Rate your interest in Screen Printing from scale 1 to 10. 10 is super interested."
+        );
+
+        if (ratingAnswer >= 5) {
+          updateHeading(
+            `Hi ${name}, please check your email at ${emailAddress}`
+          );
+        } else {
+          updateHeading(`Hi ${name}, thank you for visiting the site.`);
+        }
+      }
+
+      let moreInfor = document.querySelector("button");
+      moreInfor.addEventListener("click", popUpPrompt);
+    </script>
+  </body>
+</html>

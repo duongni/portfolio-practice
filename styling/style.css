@@ -33,6 +33,10 @@ a:hover {
   cursor: pointer;
   color: #4c774e;
 }
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
 
 .container {
   max-width: 800px;
@@ -41,6 +45,7 @@ a:hover {
 .navigation-links {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .link {
   border: 2px solid rgb(243, 210, 150);
@@ -73,4 +78,16 @@ a:hover {
 }
 .contact-info {
   margin: 60px;
+}
+.project-slide {
+  display: grid;
+  max-width: 600px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.project-slide img {
+  width: 100%;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
 }

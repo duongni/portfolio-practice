@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiking</title>
+    <style>
+      body {
+        background: linear-gradient(
+          327deg,
+          rgb(115, 252, 202) 0%,
+          rgb(240, 241, 102) 100%
+        );
+        font-family: "Cerebri Sans", sans-serif;
+        color: rgba(30, 31, 30, 0.8);
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 600px;
+        background: rgba(251, 251, 167, 0.4);
+
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      a:link {
+        text-decoration: none;
+        color: rgb(18, 124, 96);
+      }
+      button {
+        display: block;
+        background: rgb(240, 241, 102);
+        color: rgb(18, 124, 96);
+        margin: 20px auto;
+        border: 0px;
+        border-radius: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 15px 20px;
+        box-shadow: 2px 2px 2px rgba(35, 42, 39, 0.5);
+        transition: all 250ms ease-in-out;
+      }
+      button:hover {
+        background: #ecfef7;
+        color: rgb(18, 124, 96);
+      }
+      .darkTheme {
+        background: rgb(240, 241, 102);
+        color: #69bf9c;
+        box-shadow: 2px 2px 5px #78752780;
+      }
+      .poo-poo-point {
+        transition: all 150ms ease-in-out;
+      }
+      .poo-poo-point:hover {
+        filter: contrast(60%);
+        transform: scale(1.2);
+      }
+      .lake-twenty-two {
+        transition: all 150ms ease-in-out;
+      }
+      .lake-twenty-two:hover {
+        filter: contrast(60%);
+        transform: scale(1.2);
+      }
+      .heather-lake {
+        transition: all 150ms ease-in-out;
+      }
+      .heather-lake:hover {
+        filter: contrast(60%);
+        transform: scale(1.2);
+      }
+      .colchuck-lake {
+        transition: all 150ms ease-in-out;
+      }
+      .colchuck-lake:hover {
+        filter: contrast(60%);
+        transform: scale(1.2);
+      }
+      .bridal-veil-ladder {
+        transition: all 150ms ease-in-out;
+      }
+      .bridal-veil-ladder:hover {
+        filter: contrast(60%);
+        transform: scale(1.2);
+      }
+      .whistler-canada {
+        transition: all 150ms ease-in-out;
+      }
+      .whistler-canada:hover {
+        filter: contrast(60%);
+        transform: scale(1.2);
+      }
+      .hikingTrail {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+      .hikingTrail img {
+        width: 100%;
+        border-radius: 3px;
+        transition: all 250ms ease-in-out;
+      }
+      footer {
+        text-align: center;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+      }
+      .coder {
+        color: pink;
+      }
+      .dark {
+        background: rgb(9, 42, 27);
+        color: rgba(251, 251, 167, 0.8);
+      }
+      .dark .container {
+        background: #002516;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="darkTheme">Switch Theme</button>
+    <div class="container">
+      <h1>🏔 Hiking 🥾</h1>
+      <h2>A way to explore the Outdoor</h2>
+
+      <div class="hikingTrail">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/159/original/IMG_1274.jpg?1680579097"
+          alt="Poo Poo Point"
+          class="poo-poo-point"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/411/original/IMG_0833.JPG?1680719040"
+          alt="Lake Twenty-two"
+          class="lake-twenty-two"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/157/original/IMG_3896.jpg?1680578699"
+          alt="Heather Lake"
+          class="heather-lake"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/158/original/IMG_0817.JPG?1680578870"
+          alt="Colchuck Lake"
+          class="colchuck-lake"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/152/original/IMG_3872.JPG?1680577052"
+          alt="Bridal Veil Ladder"
+          class="bridal-veil-ladder"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/153/original/IMG_7631.jpeg?1680577210"
+          alt="Whistler Canada"
+          class="whistler-canada"
+        />
+      </div>
+      <p>
+        Hiking is also a great way to immerse yourself in the culture and
+        history of a country or area. Longer programs will take you to
+        experience local communities and taste unique local food.
+        <strong>
+          Hiking is where the trail meets the people, and mountain sports meet
+          cultural adventure.</strong
+        >
+      </p>
+      <div>
+        Read more
+        <a
+          href="https://www.explore-share.com/blog/what-is-hiking-equipment-best-season-top-spots/"
+          target="_blank"
+        >
+          here
+        </a>
+      </div>
+
+      <button class="findTrailButton">Find Your Trail</button>
+    </div>
+    <footer>
+      Coded by
+      <a href="https://www.nidesign.org/hello" target="_blank" class="coder">
+        Ni Duong</a
+      >
+      😎
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+
+      let themebutton = document.querySelector(".darkTheme");
+      themebutton.addEventListener("click", changeTheme);
+
+      function popUpPrompt() {
+        let firstName = prompt("What is your name?");
+        let zipCode = prompt("What is your zip code?");
+        let email = prompt("What is your email address?");
+
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = `Hi ${firstName}`;
+        let h2 = document.querySelector("h2");
+        h2.innerHTML = `please check email for trails near ${zipCode}.`;
+      }
+      let trailButton = document.querySelector(".findTrailButton");
+      trailButton.addEventListener("click", popUpPrompt);
+    </script>
+  </body>
+</html>

@@ -6,12 +6,13 @@
 }
 body {
   font-family: "IBM Plex Mono", monospace;
+  font-family: "Poppins", sans-serif;
   background: #fffffe;
   color: var(--main-font);
   text-align: center;
 }
 h1 {
-  font-size: 80px;
+  font-size: xx-large;
   text-align: center;
   margin-bottom: 0;
   font-weight: bold;
@@ -28,10 +29,6 @@ h4 {
   color: var(--sub-font);
   text-align: center;
 }
-a {
-  text-decoration: none;
-  color: var(--link);
-}
 a:hover {
   cursor: pointer;
   color: #4c774e;
@@ -47,9 +44,11 @@ a:hover {
 }
 .link {
   border: 2px solid rgb(243, 210, 150);
+  color: var(--link);
+  font-size: large;
   box-shadow: var(--box-shadow);
   border-radius: 5px;
-  background: #f9f2e4;
+  text-decoration: none;
   padding: 10px 20px;
   margin: 5px 20px;
 }
@@ -60,6 +59,7 @@ a:hover {
   font-size: 18px;
 }
 .intro-paragraph {
+  font-size: medium;
   border: 1px solid #f9f2e4;
   box-shadow: var(--box-shadow);
   border-radius: 5px;

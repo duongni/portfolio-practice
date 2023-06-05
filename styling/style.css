@@ -10,6 +10,11 @@ body {
   background: #fffffe;
   color: var(--main-font);
 }
+@media (max-width: 300px) {
+  .img-fluid {
+    max-width: 200px;
+  }
+}
 h1 {
   text-align: center;
 }

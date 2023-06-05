@@ -105,3 +105,6 @@ footer {
 .container-md {
   margin-bottom: 40px;
 }
+.row {
+  align-items: center;
+}
